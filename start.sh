@@ -9,5 +9,5 @@ ip route >> context.log
 
 ip -ts monitor all label 2>&1 | tee -a ip-monitor.log &
 
-./inetconlog.rb | tee -a inetconlog.rb
+./inetconlog.rb 2>&1 | tee -a inetconlog.rb
 
